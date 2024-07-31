@@ -1,9 +1,42 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.5">
   <diagram name="Page-1" id="ziguuIzdDeHZYpP4NTZj">
-    <mxGraphModel>
+    <mxGraphModel dx="880" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-2" value="dimregion" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="30" width="140" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-6" value="fips,&lt;div&gt;state,&lt;/div&gt;&lt;div&gt;region,&lt;/div&gt;&lt;div&gt;lat,&lt;/div&gt;&lt;div&gt;long,&lt;/div&gt;&lt;div&gt;country,&lt;/div&gt;&lt;div&gt;state_abb&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="fF8oHDMWLV-iI_0yfRnd-2">
+          <mxGeometry x="10" y="40" width="80" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-3" value="dimhospital" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="10" width="170" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-8" value="fips,&lt;div&gt;state,&lt;/div&gt;&lt;div&gt;hos_lat,&lt;/div&gt;&lt;div&gt;hos_long,&lt;/div&gt;&lt;div&gt;hq_address,&lt;/div&gt;&lt;div&gt;hospital_type,&lt;/div&gt;&lt;div&gt;hospital_name,&lt;/div&gt;&lt;div&gt;hq_city,&lt;/div&gt;&lt;div&gt;hq_state&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="fF8oHDMWLV-iI_0yfRnd-3">
+          <mxGeometry x="10" y="30" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fF8oHDMWLV-iI_0yfRnd-4" target="fF8oHDMWLV-iI_0yfRnd-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fF8oHDMWLV-iI_0yfRnd-4" target="fF8oHDMWLV-iI_0yfRnd-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-4" value="factcovid" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="297.5" y="40" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-7" value="fips,&lt;div&gt;states,&lt;/div&gt;&lt;div&gt;region,&lt;/div&gt;&lt;div&gt;confirmed,&lt;/div&gt;&lt;div&gt;death,&lt;/div&gt;&lt;div&gt;recovered,&lt;/div&gt;&lt;div&gt;active,&lt;/div&gt;&lt;div&gt;positive,&lt;/div&gt;&lt;div&gt;negative,&lt;/div&gt;&lt;div&gt;hospitalizedcurrently,&lt;/div&gt;&lt;div&gt;hopitalized,&lt;/div&gt;&lt;div&gt;hopitalizeddischarged&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="fF8oHDMWLV-iI_0yfRnd-4">
+          <mxGeometry x="10" y="20" width="140" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-5" value="dimdate" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="270" width="145" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-9" value="fips,&lt;div&gt;date,&lt;/div&gt;&lt;div&gt;month,&lt;/div&gt;&lt;div&gt;year,&lt;/div&gt;&lt;div&gt;is_weekend&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="fF8oHDMWLV-iI_0yfRnd-5">
+          <mxGeometry x="7.5" y="28" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fF8oHDMWLV-iI_0yfRnd-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fF8oHDMWLV-iI_0yfRnd-7" target="fF8oHDMWLV-iI_0yfRnd-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
